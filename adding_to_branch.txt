@@ -8,5 +8,10 @@
     git add .
     git commit -m "Commit message for new branch"
 
+
 4th Step: Push
     git push -u origin new-branch-name 
+
+Note: if push rejected, try pulling first.
+    git pull origin branch-name 
+    PS: you need to be in the directory of the branch you want to pull
