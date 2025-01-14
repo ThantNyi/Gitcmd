@@ -1,0 +1,12 @@
+1st Step: Create a new branch
+    git checkout -b new-branch-name
+
+2nd Step: Create a file you want to add
+    code file_name.txt
+
+3rd Step: Commit changes
+    git add .
+    git commit -m "Commit message for new branch"
+
+4th Step: Push
+    git push -u origin new-branch-name 
