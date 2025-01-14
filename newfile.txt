@@ -1,0 +1,61 @@
+# How to Create a New Repository and Add Files to GitHub
+
+This guide explains how to create a new repository, add files, and push them to GitHub step-by-step.
+
+---
+
+## Step 1: Create a Local Repository
+1. Open your terminal (e.g., Git Bash, PowerShell).
+2. Create a new directory and navigate into it:
+   ```bash
+   mkdir Gitcmd
+   cd Gitcmd
+   ```
+3. Initialize an empty Git repository:
+   ```bash
+   git init
+   ```
+
+---
+
+## Step 2: Add Files to the Repository
+1. Add files you want to include in the repository:
+   - You can create files manually or use the following command to create a sample README file:
+     ```bash
+     echo "# Gitcmd Repository" > README.md
+     ```
+2. Add all files to the staging area:
+   ```bash
+   git add .
+   ```
+3. Commit the files with a descriptive message:
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+---
+
+## Step 3: Connect to the Remote Repository
+1. Add your GitHub repository as the remote:
+   ```bash
+   git remote add origin git@github.com:ThantNyi/Gitcmd.git
+   ```
+2. Verify the remote link:
+   ```bash
+   git remote -v
+   ```
+
+---
+
+## Step 4: Push to GitHub
+1. Push the files to the `main` branch of the remote repository:
+   ```bash
+   git branch -M main
+   git push -u origin main
+   ```
+
+---
+
+## Step 5: Verify on GitHub
+1. Visit your repository at `https://github.com/ThantNyi/Gitcmd`.
+2. Confirm that your files have been uploaded successfully.
