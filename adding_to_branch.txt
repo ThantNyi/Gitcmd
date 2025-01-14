@@ -15,3 +15,9 @@
 Note: if push rejected, try pulling first.
     git pull origin branch-name 
     PS: you need to be in the directory of the branch you want to pull
+
+Note: After those steps just repeat 
+    git add .
+    git commit -m "...." 
+    git push .
+
