@@ -1,0 +1,17 @@
+Step 1: If you dont have the git repo yet, clone the git repo
+    git clone git@github.com:ThantNyi/SWE.git
+
+Step 2: Fetch all batches
+    git fetch --all
+
+Step 3: Check Our all branches locally
+    git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+
+Step 4: Pull all the files
+    git pull --all
+
+Step 5: Check out all branches in the file system
+    mkdir ../SWE6202_Agile_branches
+for branch in $(git branch -r | grep -v '\->' | sed 's/origin\///'); do
+    git worktree add ../SWE6202_Agile_branches/$branch $branch
+done
